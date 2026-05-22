@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -29,11 +28,9 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <ThemeToggle />
         </nav>
 
         <div className="flex items-center gap-3 md:hidden">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => setOpen(!open)}

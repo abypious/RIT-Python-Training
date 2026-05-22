@@ -19,11 +19,6 @@ body {
   color: #e2e8f0;
 }
 
-body.light,
-html.light {
-  background: #f8fafc;
-  color: #0f172a;
-}
 
 * {
   box-sizing: border-box;
@@ -71,18 +66,11 @@ section {
   @apply bg-white/10 backdrop-blur-xl border border-white/10 shadow-glow rounded-3xl;
 }
 
-body.light .card-glass {
-  background: rgba(255,255,255,0.84);
-  @apply border-slate-200/60 shadow-none;
-}
 
 .code-block {
   @apply overflow-x-auto rounded-3xl border border-slate-700/60 bg-slate-950/90 p-4 text-sm font-mono leading-relaxed text-slate-100;
 }
 
-body.light .code-block {
-  @apply border-slate-200/70 bg-slate-100/95 text-slate-900;
-}
 
 .gradient-text {
   background: linear-gradient(90deg, #7c3aed, #0ea5e9);
